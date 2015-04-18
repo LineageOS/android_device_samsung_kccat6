@@ -1,0 +1,17 @@
+# Display
+ro.sf.lcd_density=480
+
+# Radio
+rild.libargs=-d /dev/smd0
+rild.libpath=/system/lib/libsec-ril.so
+ro.ril.telephony.mqanelements=6
+ro.telephony.ril_class=lentislteRIL
+
+#system prop for Bluetooth SOC type
+qcom.bluetooth.soc=rome
+
+#system prop for Bluetooth SOC log
+enablebtsoclog=false
+
+# system prop for NFC DT
+ro.nfc.port=I2C
