@@ -425,6 +425,9 @@ etc/firmware/a420_pm4.fw
 bin/irsc_util
 etc/sec_config
 
+# IR
+lib/hw/consumerir.default.so
+
 # Media
 vendor/lib/libDivxDrm.so
 vendor/lib/libExtendedExtractor.so
