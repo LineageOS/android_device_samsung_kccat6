@@ -367,12 +367,6 @@ etc/firmware/cpp_firmware_v1_6_0.fw
 etc/F16UL_s5k2p2xx_module_info.xml
 etc/F16US_imx240_module_info.xml
 
-# CPU
-bin/mpdecision
-bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib/libthermalioctl.so
-
 # DRM
 bin/qseecomd
 lib/drm/libdrmwvmplugin.so
