@@ -247,6 +247,9 @@ on post-fs-data
     chmod 2770 /data/system/perfd
 
     #Create directory for hostapd
+    mkdir /data/misc/wifi/hostapd 0770 system wifi
+
+    #Create directory for hostapd
     mkdir /data/hostapd 0770 system wifi
 
     #Provide the access to hostapd.conf only to root and group
@@ -1560,7 +1563,7 @@ on property:sys.boot_completed=1
     # Post boot services
     start qcom-post_boot
 
-service hostapd /system/bin/hostapd -dddd /data/hostapd/hostapd.conf
+service hostapd /system/bin/hostapd -dddd /data/misc/wifi/hostapd.conf
     class late_start
     user root
     group root
