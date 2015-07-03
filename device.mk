@@ -66,5 +66,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.crda.sh \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.sec.boot.sh \
+    ueventd.qcom.rc
+
 # common lentislte
 $(call inherit-product, device/samsung/lentislte-common/lentislte.mk)
