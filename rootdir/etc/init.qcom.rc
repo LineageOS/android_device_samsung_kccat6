@@ -1332,6 +1332,10 @@ on property:ro.baseband=mdm
 on property:ro.baseband=mdm2
     start mdm_helper
 
+on property:sys.qseecomd.enable=true
+    insmod /system/lib/modules/mhi.ko
+    write /dev/kmsg "insmod mhi.ko"
+
 # Start mdm_helper_proxy
 on property:ro.mdm_helper_proxy_req=true
     start mdm_helper_proxy
