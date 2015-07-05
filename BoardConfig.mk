@@ -36,9 +36,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --tags_offset 0x02000000 --s
 TARGET_KERNEL_CONFIG := say_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/kccat6
 
-# NFC
-BOARD_NFC_CHIPSET := pn547
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_USERIMAGES_USE_EXT4 := true
