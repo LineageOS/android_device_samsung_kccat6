@@ -4,6 +4,7 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libacdbmapper.so
 vendor/lib/libaudcal.so
 lib/libcsd-client.so
+lib/libmysound.so
 etc/Bluetooth_cal.acdb
 etc/General_cal.acdb
 etc/Global_cal.acdb
