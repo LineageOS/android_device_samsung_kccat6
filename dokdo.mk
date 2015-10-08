@@ -34,3 +34,7 @@ PRODUCT_LOCALES := en_US ko_KR en_GB en_CA en_AU en_NZ en_SG zh_CN zh_TW ja_JP f
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=samsung/kccat6xx/kccat6:5.0.2/LRX22G/G901FXXU1BOD1:user/release-keys \
     PRIVATE_BUILD_DESC="kccat6xx-user 5.0.2 LRX22G G901FXXU1BOD1 release-keys"
+
+# Bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/dokdo/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
