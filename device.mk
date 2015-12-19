@@ -23,7 +23,7 @@ $(call inherit-product-if-exists, vendor/samsung/kccat6xx/kccat6xx-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += device/samsung/kccat6xx/overlay
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xxhdpi
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
@@ -37,10 +37,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
-
-# QuickBoot Source
-PRODUCT_PACKAGES += \
-    QuickBoot
 
 # common lentislte
 $(call inherit-product, device/samsung/lentislte-common/lentislte.mk)
