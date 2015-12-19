@@ -375,24 +375,6 @@ vendor/lib/libOmxWmaDec.so
 # Perf
 vendor/lib/libqc-opt.so
 
-# Postprocessing
-vendor/lib/libdisp-aba.so
--vendor/lib/libmm-abl.so
-vendor/lib/libmm-abl-oem.so
-
-# MM
-vendor/lib/libmm-disp-apis.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmm-qdcm.so
-vendor/lib/libmmQSM.so
-vendor/lib/libmmhttpstack.so
-vendor/lib/libmmiipstreammmihttp.so
-vendor/lib/libmmipstreamaal.so
-vendor/lib/libmmipstreamnetwork.so
-vendor/lib/libmmipstreamsourcehttp.so
-vendor/lib/libmmipstreamutils.so
-vendor/lib/libmmrtpdecoder.so
-
 # Keystore stuffs.
 vendor/lib/lib-sec-disp.so
 vendor/lib/libSecureUILib.so
