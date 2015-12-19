@@ -53,16 +53,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     QuickBoot
 
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.crda.sh \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.qcom.post_boot.sh \
-    init.sec.boot.sh \
-    ueventd.qcom.rc
-
 # common lentislte
 $(call inherit-product, device/samsung/lentislte-common/lentislte.mk)
