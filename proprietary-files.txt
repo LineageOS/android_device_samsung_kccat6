@@ -1,45 +1,3 @@
-# Audio
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libacdbmapper.so
-vendor/lib/libaudcal.so
-lib/libcsd-client.so
-lib/libmysound.so
-etc/Bluetooth_cal.acdb
-etc/General_cal.acdb
-etc/Global_cal.acdb
-etc/Handset_cal.acdb
-etc/Hdmi_cal.acdb
-etc/Headset_cal.acdb
-etc/Speaker_cal.acdb
-
-# Audio Firmware
-etc/firmware/audience-es705-fw.bin
-etc/firmware/audience-es705-vs.bin
-
-# Firmware
-etc/firmware/bdwlan20.bin
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/otp20.bin
-etc/firmware/qwlan20.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/utf20.bin
-etc/firmware/utfbd20.bin
-
-# QCA_CLD Wifi Firmware
-etc/firmware/wlan/qca_cld/WCNSS_cfg.dat
-etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.usb.ini
-etc/firmware/wlan/qca_cld/WCNSS_qcom_wlan_nv.bin
-
 # ADSP
 bin/adsprpcd
 vendor/lib/libadsprpc.so
@@ -49,11 +7,34 @@ vendor/lib/libscve.so
 vendor/lib/libscve_stub.so
 
 # Audio
+etc/Bluetooth_cal.acdb
+etc/General_cal.acdb
+etc/Global_cal.acdb
+etc/Handset_cal.acdb
+etc/Hdmi_cal.acdb
+etc/Headset_cal.acdb
+etc/Speaker_cal.acdb
+lib/libcsd-client.so
+lib/libmysound.so
 lib/libssaudio-client.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libacdbmapper.so
+vendor/lib/libaudcal.so
+
+# Audio Firmware
+etc/firmware/audience-es705-fw.bin
+etc/firmware/audience-es705-vs.bin
+
+# Bluetooth
+bin/btnvtool
+bin/hci_qcomm_init
+bin/wcnss_filter
+vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.apq8084.so:lib/hw/camera.vendor.apq8084.so
+lib/hw/camera.vendor.apq8084.so
 lib/F16UL_libTsAe.so
 lib/F16UL_libTsAf.so
 lib/F16UL_libTs_J_Accm.so
@@ -288,7 +269,7 @@ vendor/lib/libmmcamera_vpu_module.so
 vendor/lib/liboemcamera.so
 vendor/lib/libsensor1.so
 
-# Camera firmware
+# Camera Firmware
 cameradata/F16UL_Isp1_s5k2p2xx.bin
 cameradata/F16US_Isp1_imx240.bin
 cameradata/H16UL_Isp1_s5k2p2xx.bin
@@ -319,6 +300,14 @@ vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
+# GPS
+vendor/lib/hw/flp.default.so
+lib/libloc_api_v02.so
+vendor/lib/libgeofence.so
+vendor/lib/libizat_core.so
+vendor/lib/liblbs_core.so
+vendor/lib/liblocationservice.so
+
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/eglsubAndroid.so
@@ -342,13 +331,6 @@ vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
 
 # Graphics firmware
-etc/firmware/a225_pfp.fw
-etc/firmware/a225_pm4.fw
-etc/firmware/a225p5_pm4.fw
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
@@ -372,36 +354,32 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 
-# Perf
-vendor/lib/libqc-opt.so
-
-# Keystore stuffs.
-vendor/lib/lib-sec-disp.so
-vendor/lib/libSecureUILib.so
-vendor/lib/libStDrvInt.so
-vendor/lib/libSubSystemShutdown.so
-vendor/lib/libsecureui.so
-vendor/lib/libsubsystem_control.so
-
-# Sensors
-lib/hw/sensors.apq8084.so
-
-# Time services
-bin/time_daemon
--app/TimeService/TimeService.apk
-vendor/lib/libTimeService.so
--vendor/lib/libtime_genoff.so
-
 # NFC
 vendor/firmware/libpn547_fw.so
 
-# GPS
-vendor/lib/hw/flp.default.so
-lib/libloc_api_v02.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
+# Perf
+vendor/lib/libqc-opt.so
+
+# QCA_CLD Firmware
+etc/firmware/bdwlan20.bin
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+etc/firmware/nvm_tlv.bin
+etc/firmware/nvm_tlv_1.3.bin
+etc/firmware/nvm_tlv_2.1.bin
+etc/firmware/nvm_tlv_3.0.bin
+etc/firmware/otp20.bin
+etc/firmware/qwlan20.bin
+etc/firmware/rampatch_tlv.img
+etc/firmware/rampatch_tlv_1.3.tlv
+etc/firmware/rampatch_tlv_2.1.tlv
+etc/firmware/rampatch_tlv_3.0.tlv
+etc/firmware/utf20.bin
+etc/firmware/utfbd20.bin
+etc/firmware/wlan/qca_cld/WCNSS_cfg.dat
+etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+etc/firmware/wlan/qca_cld/WCNSS_qcom_cfg.usb.ini
+etc/firmware/wlan/qca_cld/WCNSS_qcom_wlan_nv.bin
 
 # Qualcomm framework
 vendor/lib/libdiag.so
@@ -416,12 +394,6 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-
-# BLUETOOTH
-bin/btnvtool
-bin/hci_qcomm_init
-bin/wcnss_filter
-vendor/lib/libbtnv.so
 
 # Radio
 bin/efsks
@@ -448,8 +420,17 @@ vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libconfigdb.so
 vendor/lib/libxml.so
 
+# Sensors
+lib/hw/sensors.apq8084.so
+
 # Soft AP
 bin/radish
 etc/hostapd/hostapd.accept
 etc/hostapd/hostapd.deny
 etc/hostapd/hostapd_default.conf
+
+# Time services
+bin/time_daemon
+-app/TimeService/TimeService.apk
+vendor/lib/libTimeService.so
+-vendor/lib/libtime_genoff.so
