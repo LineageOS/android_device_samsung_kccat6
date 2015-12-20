@@ -389,7 +389,6 @@ lib/hw/sensorhubs.apq8084.so
 # Time services
 bin/time_daemon
 -app/TimeService/TimeService.apk
-lib/libcommon_time_client.so
 vendor/lib/libTimeService.so
 -vendor/lib/libtime_genoff.so
 
@@ -397,7 +396,6 @@ vendor/lib/libTimeService.so
 vendor/firmware/libpn547_fw.so
 
 # GPS
--app/com.qualcomm.location.apk
 vendor/lib/hw/flp.default.so
 lib/libloc_api_v02.so
 vendor/lib/libgeofence.so
