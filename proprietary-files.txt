@@ -313,6 +313,7 @@ vendor/lib/libWVphoneAPI.so
 vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
+vendor/lib/librpmb.so
 vendor/lib/libssd.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
@@ -384,7 +385,6 @@ vendor/lib/libsubsystem_control.so
 
 # Sensors
 lib/hw/sensors.apq8084.so
-lib/hw/sensorhubs.apq8084.so
 
 # Time services
 bin/time_daemon
