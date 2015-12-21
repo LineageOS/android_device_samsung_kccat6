@@ -301,12 +301,22 @@ vendor/lib/libwvm.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # GPS
-vendor/lib/hw/flp.default.so
+etc/flp.conf
+etc/gps.conf
+etc/sap.conf
+lib/hw/gps.apq8084.so
+lib/libgps.utils.so
 lib/libloc_api_v02.so
+lib/libloc_core.so
+lib/libloc_eng.so
+vendor/lib/hw/flp.default.so
+vendor/lib/libalarmservice_jni.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblocationservice.so
+vendor/lib/libperipheral_client.so
+vendor/lib/libulp2.so
 
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so
