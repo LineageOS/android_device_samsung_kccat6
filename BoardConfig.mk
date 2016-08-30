@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Dokdo Project
+# Copyright (C) 2016 The Sayanogen Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,9 +22,6 @@ KCCAT6_PATH := device/samsung/kccat6xx
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
-
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := dummy_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := $(KCCAT6_PATH)/mkbootimg.mk
@@ -33,7 +30,7 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.selin
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --tags_offset 0x02000000 --second_offset 0x00f00000
-TARGET_KERNEL_CONFIG := say_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_kccat6_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/kccat6
 
 # Partitions
@@ -48,18 +45,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 3859718144
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 28
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
-
-# Wifi
-BOARD_HAS_QCOM_WLAN              := true
-BOARD_HAS_QCOM_WLAN_SDK          := true
-BOARD_WLAN_DEVICE                := qcwcn
-BOARD_HOSTAPD_DRIVER             := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-WIFI_DRIVER_FW_PATH_STA          := "sta"
-WIFI_DRIVER_FW_PATH_AP           := "ap"
-WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/samsung/kccat6xx/BoardConfigVendor.mk
