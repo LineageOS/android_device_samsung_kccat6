@@ -19,6 +19,10 @@ TARGET_OTA_ASSERT_DEVICE := kccat6xx,kccat6
 
 KCCAT6_PATH := device/samsung/kccat6xx
 
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+#USE_CLANG_PLATFORM_BUILD := false
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth
 
