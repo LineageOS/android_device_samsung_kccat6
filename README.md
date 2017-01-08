@@ -4,7 +4,6 @@ Build manifest `.repo/local_manifests/kccat6.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="IonKiwi/android_device_samsung_kccat6xx" path="device/samsung/kccat6xx" remote="github" revision="cm-14.1" />
   <project name="IonKiwi/android_kernel_samsung_kccat6" path="kernel/samsung/kccat6" remote="github" revision="cm-14.1" />
