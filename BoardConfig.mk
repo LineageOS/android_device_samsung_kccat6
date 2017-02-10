@@ -23,7 +23,7 @@ KCCAT6_PATH := device/samsung/kccat6xx
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := dummy_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_kccat6_eur_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
