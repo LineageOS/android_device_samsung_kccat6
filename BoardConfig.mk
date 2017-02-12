@@ -23,6 +23,7 @@ KCCAT6_PATH := device/samsung/kccat6xx
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth
 
 # Kernel
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --tags_offset 0x02000000 --second_offset 0x00f00000
 TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_kccat6_eur_defconfig
 
 # Partitions
