@@ -25,5 +25,5 @@ To build:
 
 ```sh
 source build/envsetup.sh
-brunch kccat6
+brunch kccat6xx
 ```
