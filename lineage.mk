@@ -28,6 +28,3 @@ PRODUCT_DEFAULT_REGION := US
 
 PRODUCT_LOCALES := en_US ko_KR en_GB en_CA en_AU en_NZ en_SG zh_CN zh_TW ja_JP fr_FR fr_BE fr_CA fr_CH it_IT it_CH es_ES de_DE de_AT de_CH de_LI nl_NL nl_BE cs_CZ pl_PL ru_RU # vi_VN
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=samsung/kccat6xx/kccat6:6.0.1/MMB29M/G901FXXU1CPE1:user/release-keys \
-    PRIVATE_BUILD_DESC="kccat6xx-user 6.0.1 MMB29M G901FXXU1CPE1 release-keys"
