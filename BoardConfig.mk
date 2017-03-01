@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from common lentislte
--include device/samsung/lentislte-common/BoardConfigCommon.mk
+-include device/samsung/apq8084-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := kccat6xx,kccat6
 

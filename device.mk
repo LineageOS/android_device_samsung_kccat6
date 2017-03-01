@@ -40,4 +40,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # common lentislte
-$(call inherit-product, device/samsung/lentislte-common/lentislte.mk)
+$(call inherit-product, device/samsung/apq8084-common/apq8084.mk)
