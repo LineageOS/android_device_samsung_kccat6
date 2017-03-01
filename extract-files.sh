@@ -3,7 +3,7 @@
 set -e
 
 export VENDOR=samsung
-export DEVICE=kccat6xx
+export DEVICE=kccat6
 
 function extract() {
     for FILE in `egrep -v '(^#|^$)' $1`; do

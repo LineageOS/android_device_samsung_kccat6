@@ -17,7 +17,7 @@
 
 TARGET_OTA_ASSERT_DEVICE := kccat6xx,kccat6
 
-KCCAT6_PATH := device/samsung/kccat6xx
+KCCAT6_PATH := device/samsung/kccat6
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth
@@ -40,4 +40,4 @@ BOARD_VOLD_MAX_PARTITIONS := 28
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
 # inherit from the proprietary version
--include vendor/samsung/kccat6xx/BoardConfigVendor.mk
+-include vendor/samsung/kccat6/BoardConfigVendor.mk

@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/kccat6xx/full_kccat6xx.mk)
+$(call inherit-product, device/samsung/kccat6/full_kccat6.mk)
 
 # Inherit common CM phone.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := kccat6xx
-PRODUCT_NAME := lineage_kccat6xx
+PRODUCT_DEVICE := kccat6
+PRODUCT_NAME := lineage_kccat6
 
 # SH LANGUAGE SET
 PRODUCT_DEFAULT_LANGUAGE := en
