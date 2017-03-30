@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common lentislte
+# inherit from common apq8084
 -include device/samsung/apq8084-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := kccat6xx,kccat6
@@ -30,10 +30,10 @@ TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_kccat6_eur_defconfig
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2539307008
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2621440000
 BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12577636352
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 12525191168
 
 # Vold
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
