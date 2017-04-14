@@ -19,8 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/kccat6/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_kccat6xx
-PRODUCT_DEVICE := kccat6xx
+PRODUCT_NAME := full_kccat6
+PRODUCT_DEVICE := kccat6
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := kccat6
+PRODUCT_MODEL := SM-G901F
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	PRODUCT_NAME=kccat6xx \
+	TARGET_DEVICE=kccat6 \
+	BUILD_FINGERPRINT="samsung/kccat6xx/kccat6:6.0.1/MMB29M/G901FXXS1CPLA:user/release-keys" \
+	PRIVATE_BUILD_DESC="kccat6xx-user 6.0.1 MMB29M G901FXXS1CPLA release-keys"
