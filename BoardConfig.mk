@@ -36,8 +36,6 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12525191168
 
 # Vold
-BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-BOARD_VOLD_MAX_PARTITIONS := 28
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
 # inherit from the proprietary version
