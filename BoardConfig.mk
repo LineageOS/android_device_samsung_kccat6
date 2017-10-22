@@ -21,7 +21,7 @@ TARGET_OTA_ASSERT_DEVICE := kccat6xx,kccat6
 KCCAT6_PATH := device/samsung/kccat6
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth $(LOCAL_PATH)/bluetooth
 
 # Kernel
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02200000 --tags_offset 0x02000000 --second_offset 0x00f00000
