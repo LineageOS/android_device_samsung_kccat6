@@ -20,6 +20,8 @@ TARGET_OTA_ASSERT_DEVICE := kccat6xx,kccat6
 
 KCCAT6_PATH := device/samsung/kccat6
 
+TARGET_SYSTEM_PROP += $(KCCAT6_PATH)/system.prop
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(KCCAT6_PATH)/bluetooth $(COMMON_PATH)/bluetooth
 
