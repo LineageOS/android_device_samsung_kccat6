@@ -35,7 +35,5 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
-
 # common apq8084
 $(call inherit-product, device/samsung/apq8084-common/apq8084.mk)
